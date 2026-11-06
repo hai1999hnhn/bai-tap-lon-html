@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ca sĩ JustaTee">
+  <title>Ca sĩ JustaTee | SoundWave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">Sound<span>Wave</span></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" aria-label="Mở menu">☰</label>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="search.html">Tìm kiếm</a></li>
+        <li><a href="songdetail.html">Bài hát</a></li>
+        <li><a href="artistsongs.html" class=active>Ca sĩ</a></li>
+        <li><a href="composer-songs.html">Tác giả</a></li>
+        <li><a href="album-songs.html">Album</a></li>
+        <li><a href="detail.html">Tin tức</a></li>
+        <li><a href="about.html">Về chúng tôi</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="wrap profile">
+      <div class="cover c1 avatar">
+        <img src="images/messi.jpg" alt="">
+      </div>
+      <div>
+        <h1>JustaTee</h1>
+        <p>Ca sĩ Indie đến từ Hải Phòng, nổi tiếng với giọng hát trầm ấm và những bản ballad chiều mưa.</p>
+        <p><strong id="followers">128.400</strong> người theo dõi</p><button class="btn" id="follow">Theo dõi</button>
+      </div>
+    </section>
+    <section class="wrap">
+      <h2>Ca khúc của JustaTee</h2>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Bài hát</th>
+              <th>Ca sĩ</th>
+              <th>Album</th>
+              <th>Thời lượng</th>
+              <th>Lượt nghe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><button class="play sm" data-track="0" aria-label="Phát She Neva Know">▶</button> <a
+                  href="songdetail.html">She Neva Know</a></td>
+              <td><a href="artistsongs.html">JustaTee</a></td>
+              <td><a href="album-songs.html">Mật Đắng</a></td>
+              <td>3:42</td>
+              <td>1,2 triệu</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><button class="play sm" data-track="1" aria-label="Phát Đã Lỡ Yêu Em Nhiều">▶</button> <a
+                  href="songdetail.html">Đã Lỡ Yêu Em Nhiều</a></td>
+              <td><a href="artistsongs.html">JustaTee</a></td>
+              <td><a href="album-songs.html">Mật Đắng</a></td>
+              <td>4:05</td>
+              <td>980 N</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><button class="play sm" data-track="2" aria-label="Phát Thằng Điên">▶</button> <a
+                  href="songdetail.html">Thằng Điên</a></td>
+              <td><a href="artistsongs.html">JustaTee</a></td>
+              <td><a href="album-songs.html">Mật Đắng</a></td>
+              <td>3:30</td>
+              <td>870 N</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><button class="play sm" data-track="4" aria-label="Phát Im Lặng">▶</button> <a
+                  href="songdetail.html">Im Lặng</a></td>
+              <td><a href="artistsongs.html">LK</a></td>
+              <td><a href="album-songs.html">Đêm Không Ngủ</a></td>
+              <td>3:15</td>
+              <td>540 N</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 SoundWave. Kết nối nghệ sĩ Indie với hàng triệu tâm hồn yêu âm nhạc.</p>
+    <p><a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a> · <a
+        href="about.html">Về chúng tôi</a></p>
+  </footer>
+  <div class="player" role="region" aria-label="Trình phát nhạc">
+    <div class="cover c0 mini" id="p-cover"></div>
+    <div class="now"><strong id="p-title">She Neva Know</strong><small id="p-artist">JustaTee</small></div>
+    <button class="ctl" id="p-prev" aria-label="Bài trước">⏮</button>
+    <button class="play" id="main-play" aria-label="Phát hoặc tạm dừng">▶</button>
+    <button class="ctl" id="p-next" aria-label="Bài tiếp theo">⏭</button>
+    <span class="time" id="p-cur">0:00</span>
+    <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Tua bài hát">
+    <span class="time" id="p-dur">0:00</span>
+    <input type="range" id="vol" min="0" max="1" step="0.05" value="0.8" aria-label="Âm lượng">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

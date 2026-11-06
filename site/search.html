@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tìm kiếm bài hát">
+  <title>Tìm kiếm bài hát | SoundWave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">Sound<span>Wave</span></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" aria-label="Mở menu">☰</label>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="search.html" class=active>Tìm kiếm</a></li>
+        <li><a href="songdetail.html">Bài hát</a></li>
+        <li><a href="artistsongs.html">Ca sĩ</a></li>
+        <li><a href="composer-songs.html">Tác giả</a></li>
+        <li><a href="album-songs.html">Album</a></li>
+        <li><a href="detail.html">Tin tức</a></li>
+        <li><a href="about.html">Về chúng tôi</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="wrap">
+      <h1>Tìm kiếm bài hát</h1>
+      <form class="filters" role="search" onsubmit="return false">
+        <input type="search" id="q" placeholder="Nhập tên bài hát, ca sĩ..." aria-label="Từ khóa">
+        <select aria-label="Thể loại">
+          <option>Mọi thể loại</option>
+          <option>Indie</option>
+          <option>Lo-Fi</option>
+          <option>EDM</option>
+          <option>Acoustic</option>
+        </select>
+        <select aria-label="Năm phát hành">
+          <option>Mọi năm</option>
+          <option>2026</option>
+          <option>2025</option>
+          <option>2024</option>
+        </select>
+        <select aria-label="Sắp xếp">
+          <option>Mới nhất</option>
+          <option>Nghe nhiều nhất</option>
+        </select>
+        <button class="btn" type="submit">Tìm</button>
+      </form>
+      <p id="count">Tìm thấy 6 bài hát</p>
+      <div class="grid songs" id="results">
+        <article class="card">
+          <div class="cover c0">
+            <img src="images/shenevaknow.jpg" alt="she neva know">
+          </div>
+          <h3><a href="songdetail.html">She Neva Know</a></h3>
+          <p><a href="artistsongs.html">JustaTee</a> · 3:42</p><button class="play" data-track="0"
+            aria-label="Phát She Neva Know">▶</button>
+        </article>
+        <article class="card">
+          <div class="cover c1">
+            <img src="images/daloyeuemnhieu.jpg" alt="đã lỡ yêu em nhiều">
+          </div>
+          <h3><a href="songdetail.html">Đã Lỡ Yêu Em Nhiều</a></h3>
+          <p><a href="artistsongs.html">JustaTee</a> · 4:05</p><button class="play" data-track="1"
+            aria-label="Phát Đã Lỡ Yêu Em Nhiều">▶</button>
+        </article>
+        <article class="card">
+          <div class="cover c2">
+            <img src="images/thangdien.jpg" alt="thằng điên">
+          </div>
+          <h3><a href="songdetail.html">Thằng Điên</a></h3>
+          <p><a href="artistsongs.html">JustaTee</a> · 2:58</p><button class="play" data-track="2"
+            aria-label="Phát Thằng Điên">▶</button>
+        </article>
+        <article class="card">
+          <div class="cover c3">
+            <img src="images/mattroicuaem.jpg" alt="mặt trời của em">
+          </div>
+          <h3><a href="songdetail.html">Mặt Trời Của Em</a></h3>
+          <p><a href="artistsongs.html">Phương Ly</a> · 3:30</p><button class="play" data-track="3"
+            aria-label="Phát Mặt Trời Của Em">▶</button>
+        </article>
+        <article class="card">
+          <div class="cover c4">
+            <img src="images/imlang.jpg" alt="im lặng">
+          </div>
+          <h3><a href="songdetail.html">Im Lặng</a></h3>
+          <p><a href="artistsongs.html">LK</a> · 3:15</p><button class="play" data-track="4"
+            aria-label="Phát Im Lặng">▶</button>
+        </article>
+        <article class="card">
+          <div class="cover c0">
+            <img src="images/ngonnentruocgio.jpg" alt="ngọn nến trước Gió">
+          </div>
+          <h3><a href="songdetail.html">Ngọn Nến Trước Gió</a></h3>
+          <p><a href="artistsongs.html">LK</a> · 3:48</p><button class="play" data-track="5"
+            aria-label="Phát Ngọn Nến Trước Gió">▶</button>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 SoundWave. Kết nối nghệ sĩ Indie với hàng triệu tâm hồn yêu âm nhạc.</p>
+    <p><a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a> · <a
+        href="about.html">Về chúng tôi</a></p>
+  </footer>
+  <div class="player" role="region" aria-label="Trình phát nhạc">
+    <div class="cover c0 mini" id="p-cover"></div>
+    <div class="now"><strong id="p-title">She Neva Know</strong><small id="p-artist">JustaTee</small></div>
+    <button class="ctl" id="p-prev" aria-label="Bài trước">⏮</button>
+    <button class="play" id="main-play" aria-label="Phát hoặc tạm dừng">▶</button>
+    <button class="ctl" id="p-next" aria-label="Bài tiếp theo">⏭</button>
+    <span class="time" id="p-cur">0:00</span>
+    <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Tua bài hát">
+    <span class="time" id="p-dur">0:00</span>
+    <input type="range" id="vol" min="0" max="1" step="0.05" value="0.8" aria-label="Âm lượng">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

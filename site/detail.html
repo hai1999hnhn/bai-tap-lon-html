@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tin tức & Review">
+  <title>Tin tức & Review | SoundWave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Điều hướng chính">
+      <a class="logo" href="index.html">Sound<span>Wave</span></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger" aria-label="Mở menu">☰</label>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="search.html">Tìm kiếm</a></li>
+        <li><a href="songdetail.html">Bài hát</a></li>
+        <li><a href="artistsongs.html">Ca sĩ</a></li>
+        <li><a href="composer-songs.html">Tác giả</a></li>
+        <li><a href="album-songs.html">Album</a></li>
+        <li><a href="detail.html" class=active>Tin tức</a></li>
+        <li><a href="about.html">Về chúng tôi</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="wrap article">
+      <h1>Review album “Mật Đắng”: nỗi nhớ được hầm nhừ</h1>
+      <p><small>Đăng ngày 20/03/2026 · Biên tập SoundWave</small></p>
+      <div class="cover c3 banner">
+        <img src="images/mattroicuaem.jpg" alt="">
+      </div>
+      <p>Album đầu tay của <a href="artistsongs.html">JustaTee</a> gồm những bản ballad giản dị, nơi giọng hát trầm ấm
+        gặp phần hòa âm tối giản của <a href="composer-songs.html">Nam Phong</a>.</p>
+      <h2>Điểm nhấn</h2>
+      <p>“She Neva Know” mở đầu bằng tiếng guitar mộc, rồi lớn dần thành một bản tình ca đầy day dứt. Nghe trọn vẹn
+        tại <a href="album-songs.html">trang album</a>.</p>
+      <h2>Lời kết</h2>
+      <p>Một album đáng nghe vào những buổi chiều mưa, dành cho ai yêu sự chân thành.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 SoundWave. Kết nối nghệ sĩ Indie với hàng triệu tâm hồn yêu âm nhạc.</p>
+    <p><a href="policy-terms.html">Chính sách &amp; Điều khoản</a> · <a href="contact.html">Liên hệ</a> · <a
+        href="about.html">Về chúng tôi</a></p>
+  </footer>
+  <div class="player" role="region" aria-label="Trình phát nhạc">
+    <div class="cover c0 mini" id="p-cover"></div>
+    <div class="now"><strong id="p-title">She Neva Know</strong><small id="p-artist">JustaTee</small></div>
+    <button class="ctl" id="p-prev" aria-label="Bài trước">⏮</button>
+    <button class="play" id="main-play" aria-label="Phát hoặc tạm dừng">▶</button>
+    <button class="ctl" id="p-next" aria-label="Bài tiếp theo">⏭</button>
+    <span class="time" id="p-cur">0:00</span>
+    <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Tua bài hát">
+    <span class="time" id="p-dur">0:00</span>
+    <input type="range" id="vol" min="0" max="1" step="0.05" value="0.8" aria-label="Âm lượng">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
